@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.scroll-banner {
+    background-color: #0033cc;
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.scroll-banner p {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: scroll-left-right 10s linear infinite;
+}
+
+@keyframes scroll-left-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    padding-top: 80px;
+}
+
+.logo {
+    width: 220px;
+}
+
+.company-logo {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: red;
+    padding: 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: #cc0000;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.search-box-container {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.search-box {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 220px;
+}
+
+.homepage-text {
+    background-color: red;
+    color: white;
+    margin: 60px auto;
+    max-width: 900px;
+    padding: 40px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-text h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* Highlight class for search results */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;  /* Change highlighted text color to black */
+}
+
